@@ -2,7 +2,7 @@
  * theme by meowcatcoder with bootstrap
  */
 
- @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+ /*@import url(https://fonts.googleapis.com/css?family=Dancing+Script);*/
 
 body {
     width: 100%;
@@ -28,20 +28,19 @@ p {
     padding-bottom: 2%;
     width: 26%;
 }
-/*headerblur*/
 
-.content{
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    z-index: 1;
-  }
 
   h1 {
     font-size: 2.5em;
     font-family: 'Dancing Script', cursive;
   }
-  
-    h2, h3{
+
+  h2 {
+        font-family: 'Quicksand', sans-serif;
+    font-size: 3.5em;
+  }
+
+    h3 {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     }
 
@@ -50,7 +49,7 @@ p {
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.5em;
-  margin: 10px 0 0 10px;
+  margin: 60px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
   width: 16.8em;
@@ -114,7 +113,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #00CCD6;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -170,8 +169,7 @@ a:focus {
 }
 
 .navbar-custom .nav li a:hover {
-    border-bottom: 2px solid #E49400;
-    outline: 0;
+        outline: 0;
     color: #E49400;
     background-color: transparent;
 }
@@ -264,7 +262,7 @@ a:focus {
     position: relative;
     top: 100px;
     right: 0%;
-    margin-top: 100px;
+    margin-top: 3px;
     padding: 10px 16px;
     /* border: 1px solid #fff; */
     border-radius: 100%!important;
@@ -458,17 +456,53 @@ body {
 /*parallax image*/
 
 
-.parallax-window {
-    min-height: 500px;
-    background: transparent;
+.parallax {
+    width: 100%;
+    height: 650px;
+    background-image: url("https://scontent-mia1-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/11760195_10207272800635290_2251918134010116137_n.jpg?oh=7a6e644529069d44fcf94cbb22684516&oe=5684F65C");
+    background-attachment: fixed;
+    background-position-y: 36%;
+    background-position-x: -9%;
 }
 
-.line-purple {    border-left: 15px solid #820037;}
+/*.line-1 {   
+    border-bottom: 1px solid;
+    padding-bottom: 2%;
+    width: 26%;
+    text-align: center;
+    margin: auto auto 3%;
+}
+.line-2 {   
+    border-bottom: 1px solid;
+    padding-bottom: 2%;
+    width: 34%;
+    text-align: center;
+    margin: auto auto 3%;
+}
+.line-3 {   
+    border-bottom: 1px solid;
+    padding-bottom: 2%;
+    width: 50%;
+    text-align: center;
+    margin: auto auto 3%;
+}*/
+/*work*/
 
+
+.bg-gradiant {
+    background-image: url(http://static.tumblr.com/1b06c78c6576c1910433f6953735469b/fw8dqdr/cErn76lfp/tumblr_static_8sx3tgpb0tgk8wg0ww800sc0k.png);
+    /*background-color: #F9F9F9;*/
+        background-repeat: no-repeat;
+
+}
 /*work*/
 .bg-gray {
-     background-color: #F9F9F9;
-    border: 5px solid rgba(255, 255, 255, 0);
+    width: 100%;
+    height: auto;
+    /*background-size: cover;
+    background-image: url("http://www.wallpaperjoo.com/wp-content/uploads/2015/09/cat-wallpaper-2-Awesome-Wallpapers-1024x640.jpg");
+    /* background-color: #F9F9F9;*/
+    background-color: #EFEFEF;
 }
 
 .sec {
@@ -489,7 +523,7 @@ body {
 }
 .p {
     font-weight: 900;
-    color: white;
+    color: black;
     position: absolute;
     font-size: 1.5em;
 }
@@ -502,7 +536,6 @@ body {
 
 .b {
     font-weight: 900;
-    color: white;
     position: absolute;
     margin-top: 55px;
     margin-bottom: 70px;
@@ -530,13 +563,18 @@ body {
     margin-left: 69px;
     margin-right: 60px;
 }
+.hexa {
+    background-image: url("../img/hexahover.png");
+    height: 223px;
+    width: 197px;
+}
 
 .hexa .overlay {
     position: absolute;
     width: 40%;
     height: 100%;
     opacity: 0;
-    background-image: url("../img/hexahover.png");
+    background-image: url("../img/hexa.png");
     background-repeat: no-repeat;
     text-align: center;
     vertical-align: middle;
@@ -556,6 +594,7 @@ body {
 }
 .absolute {
     position: absolute;
+    color: black;
     
 }
 
@@ -570,6 +609,7 @@ body {
     bottom: 14%;
     left: 8%;
 }
+
 
 
 .pd-5 {
@@ -591,7 +631,9 @@ body {
     padding-top: 5%;
 }
 
-
+.pb-10 {
+    padding-bottom: 10%;
+}
 .pb-5 {
     padding-bottom: 5%;
 }
@@ -602,6 +644,9 @@ body {
     padding-left: 5%;
 }
 
+.pr-5 {
+    padding-right: 5%;
+}
 
 @media(min-width:767px) {
     
@@ -637,15 +682,16 @@ body {
 
 
 
-.hexa {
-    background-image: url(../img/hexa.png);
-    height: 223px;
-    width: 197px;
-}
+
 
 
 .btn-send {
     color: white;
     background-color: #3DCAAF;
     border: 2px solid white;
+}
+
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0)!important;
 }
